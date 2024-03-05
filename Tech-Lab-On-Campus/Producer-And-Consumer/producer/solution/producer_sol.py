@@ -29,7 +29,7 @@ class mqProducer(mqProducerInterface):
         self.channel.basic_publish(
             exchange="Exchange Name",
             routing_key="Routing Key",
-            body="Message",
+            body=message,
         )
 
         # Close Channel
